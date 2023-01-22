@@ -41,7 +41,7 @@ function renderLicenseSection(license) {
 }
 
 function addSectionToTableOfContent(data, sectionText) {
-  let text;
+  let text = "";
   if (data) {
     linkText = sectionText.replace(" ", "-").toLowerCase();
     text = `[${sectionText}](#${linkText})`;
