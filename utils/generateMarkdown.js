@@ -27,6 +27,7 @@ function renderLicenseLink(license) {
   if (!license) {
     return "";
   }
+  license = license.toLowerCase();
   const licenseLink = `https://choosealicense.com/licenses/${license}`;
   return licenseLink;
 }
