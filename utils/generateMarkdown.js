@@ -23,13 +23,21 @@ ${data}`;
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  if (!license) {
+    return "";
+  }
+  const licenseLink = `https://choosealicense.com/licenses/${license}`;
+  return licenseLink;
+}
 
 function renderLicenseSection(license) {
   if (!license) {
     return "";
   }
-  const licenseText = `Licensed under the ${license} license`;
+  const licenseText = `Licensed under the [${license}](${renderLicenseLink(
+    license
+  )}) license`;
   return renderSection("License", licenseText);
 }
 
