@@ -65,6 +65,8 @@ ${addSectionToTableOfContent(
 
 ${addSectionToTableOfContent(data.test, "Test Instructions")}
 
+${addSectionToTableOfContent(data.githubUsername || data.email, "Questions")}
+
 ${addSectionToTableOfContent(data.license, "License")}
   `;
   return tableOfContents;
