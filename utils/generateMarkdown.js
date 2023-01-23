@@ -39,16 +39,17 @@ function renderLicenseSection(license) {
   )}) license`;
   return renderSection("License", licenseText);
 }
-
+//adding a section to table of content
 function addSectionToTableOfContent(data, sectionText) {
   let text = "";
   if (data) {
-    linkText = sectionText.replace(" ", "-").toLowerCase();
+    linkText = sectionText.replace(" ", "-").toLowerCase(); //replacing space by - , and converting intolowercase//
     text = `[${sectionText}](#${linkText})`;
   }
   return text;
 }
 
+// adding a table of content
 function renderTableOfContent(data) {
   let tableOfContents = `## Table Of Contents
   
@@ -72,6 +73,7 @@ ${addSectionToTableOfContent(data.license, "License")}
   return tableOfContents;
 }
 
+// adding questions section to the readme
 function renderQuestionsSection(data) {
   let questionsText = `## Questions`;
   if (data.githubUsername) {
@@ -89,6 +91,7 @@ function renderQuestionsSection(data) {
   return questionsText;
 }
 
+// creating a markdown formatted text based on the data provided
 function generateMarkdown(data) {
   let mdText;
   mdText = `# ${data.title}

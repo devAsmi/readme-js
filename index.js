@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+// created an array of questions to ask
 const questions = [
   {
     type: "input",
@@ -52,9 +53,13 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
+  // writeFileSync is use to create a new file if there already isnt one and write content to file
   fs.writeFileSync(fileName, data);
 }
 
+// when the program loads, init is called
+// inquirer then asks the user with a list of questions
+// and records the answers which will be used to create the README_generated file
 function init() {
   inquirer
     .prompt(questions)
