@@ -28,6 +28,12 @@ If anyone is open to modify and make contributions, they can clone the repo and 
 
 Licensed under the [MIT](https://choosealicense.com/licenses/mit) license.
 
-## Video demo
+## Video demo and link
+
+![Video of application on terminal](./assets//readme-js-video.gif)
+
+[Video Link](https://drive.google.com/file/d/1m_Hy9mQIorrIOQu6FXTLvBTCN1X45x6l/view)
 
 ## Screenshots
+
+![Screenshot of application](./assets//readme-js-capture.png)
